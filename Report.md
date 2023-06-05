@@ -351,11 +351,51 @@ date: "Publication date"
         </h2>
             <br/>
             <h3>
-                نتیجه اجرای دو الگوریتم مسیریابی گفته شده بر روی توپولوژی داده شده کنار فایل‌های ارسال موجود است که حال به بررسی آنها می‌پردازیم.<br/>
-                زمان اندازه گیری شده بی در نظر گیری زمان عملیات I/O بوده و پس از پایان الگوریتم به ازای هر گره است.<br/>
-                با توجه به اینکه می‌دانیم الگوریتم <strong style="color: beige"> Dijkstra</strong> عملکرد بهتری از الگوریتم <strong style="color: beige">Bellman-Ford</strong> دارد، باید توقع زمان اجرای کمتری برای این الگوریتم داشته باشیم و این در نتایج مشاهده شدنیست. البته پروتوکول مسیریابی Link-State می‌توانست عملکرد بهتری نیز داشته باشد که در این پیاده سازی از آن صرف نظر شده است.(کدهای روش دیگر موجود است و در صورت نیاز می‌توان با روش دیگر آن‌ها را اجرا نمود)<br/>
+                نتیجه اجرای دو الگوریتم مسیریابی گفته شده بر روی توپولوژی داده شده کنار فایل‌های ارسال موجود است که حال به بررسی آنها می‌پردازیم :<br/><br/>
+                الگوریتم <strong style="color: beige"> Bellman-Ford </strong> برای <strong style="color: beige"> dvrp </strong> و الگوریتم <strong style="color: beige"> Dijkstra </strong> برای <strong style="color: beige"> lsrp </strong> به کار رفته‌اند.<br/><br/>
+                زمان اندازه گیری شده بی در نظر گیری زمان عملیات I/O بوده و پس از پایان الگوریتم به ازای هر گره است.<br/><br/>
+                با توجه به اینکه می‌دانیم الگوریتم <strong style="color: beige"> Dijkstra</strong> عملکرد بهتری از الگوریتم <strong style="color: beige">Bellman-Ford</strong> دارد، باید توقع زمان اجرای کمتری برای این الگوریتم داشته باشیم و این در نتایج مشاهده شدنیست. البته پروتوکول مسیریابی Link-State می‌توانست عملکرد بهتری نیز داشته باشد که در این پیاده سازی از آن صرف نظر شده است.(کدهای روش دیگر موجود است و در صورت نیاز می‌توان با روش دیگر آن‌ها را اجرا نمود)<br/><br/>
                 الگوریتم <strong style="color: beige">Bellman-Ford</strong> امکان تشخیص یال با وزن منفی را نیز دارد و در حالت کلی <strong style="color: beige">جامع‌تر</strong> است. برای همین کمی مرتبه زمانی بیشتری از الگوریتم <strong style="color: beige">Dijkstra</strong> دارد.
                 <br/><br/>
+                    <strong style="color: beige">زمان‌های ثبت شده برای هر حالت :</strong><br/><br/>
+                    <ul>
+                        <li>
+                            <strong style="color: #80ced6">
+                                پیش از حذف یال :
+                            </strong><br/><br/>
+                            <ul>
+                                <li>
+                                    <strong style="color: pink">
+                                        dvrp takes 5873156 ns
+                                    </strong> &nbsp; 
+                                </li><br/>
+                                <li>
+                                    <strong style="color: pink">
+                                        lsrp takes 9983243 ns
+                                    </strong> &nbsp; 
+                                </li><br/>
+                            </ul>
+                        </li><br/>
+                        <li>
+                            <strong style="color: #80ced6">
+                                پس از حذف یال :
+                            </strong><br/><br/>
+                            <ul>
+                                <li>
+                                    <strong style="color: pink">
+                                        dvrp takes 2424435 ns
+                                    </strong> &nbsp; 
+                                </li><br/>
+                            </ul> 
+                            <ul>
+                                <li>
+                                    <strong style="color: pink">
+                                        lsrp takes 6010722 ns
+                                    </strong> &nbsp; 
+                                </li><br/>
+                            </ul> 
+                        </li><br/>
+                    </ul>
             </h3>
     </li>
 </ul>
