@@ -194,7 +194,7 @@ Dest | Next Hop | Dist | Shortest-Path
 11 | 6 | 29 |  [31->6->11]
 12 | 9 | 12 |  [31->9->21]
 13 | 13 | 0 |  [31]
-dvrp takes 3578821 ns
+dvrp takes 5873156 ns
 Iter 1:
 dest 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 
 cost 0 | -1 | -1 | -1 | 6 | -1 | 7 | -1 | -1 | -1 | -1 | -1 | -1 | 
@@ -988,7 +988,7 @@ Path [s] -> [d] | Min-Cost | Shortest-Path
 13->10 | 24 | 31->9->21->01
 13->11 | 29 | 31->6->11
 13->12 | 12 | 31->9->21
-lsrp takes 7885324 ns
+lsrp takes 9983243 ns
 ok
 Dest | Next Hop | Dist | Shortest-Path
 ---------------------------------------
@@ -1185,7 +1185,7 @@ Dest | Next Hop | Dist | Shortest-Path
 11 | 6 | 29 |  [31->6->11]
 12 | 9 | 12 |  [31->9->21]
 13 | 13 | 0 |  [31]
-dvrp takes 2109843 ns
+dvrp takes 2424435 ns
 Iter 1:
 dest 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 
 cost 0 | -1 | -1 | -1 | 6 | -1 | 7 | -1 | -1 | -1 | -1 | -1 | -1 | 
@@ -1979,4 +1979,4 @@ Path [s] -> [d] | Min-Cost | Shortest-Path
 13->10 | 24 | 31->9->21->01
 13->11 | 29 | 31->6->11
 13->12 | 12 | 31->9->21
-lsrp takes 5369810 ns
+lsrp takes 6010722 ns
